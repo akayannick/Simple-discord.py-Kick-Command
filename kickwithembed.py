@@ -3,7 +3,7 @@ import discord
 from discord.ext import commands, tasks
 
 #set the client
-client = commands.Bot(command_prefix="T!")
+client = commands.Bot(command_prefix="+")
 
 @client.command(description="kicks a user with specific reason (only admins)")
 @commands.has_permissions(administrator=True)
