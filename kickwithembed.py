@@ -21,7 +21,7 @@ async def kick(ctx, member: discord.User = None, reason=None):
 
         embed = discord.Embed(
             title="Kicked!",
-            description=f"You have been kicked from **{ctx.guild.name}** for   **{reason}**! \n \n \n Support Server: https://discord.gg/BTBrTPRa6X",
+            description=f"You have been kicked from **{ctx.guild.name}** for   **{reason}**!",
             color=discord.Color.blue())
         await member.send(embed=embed)
         await ctx.guild.kick(member, reason=reason)
